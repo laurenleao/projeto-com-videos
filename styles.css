@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f1e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, #01ecf3, #da107b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+h5 {
+    max-width: 600px;
+    text-align: center;
+    margin: 1rem auto 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+.descricao-background {
+    max-width: 800px;
+    margin: 3rem auto 0 auto; /* espaçamento maior no topo + centralizado */
+    text-align: justify;
+    padding: 1rem;
+}
+
+.descricao-background p {
+    margin-bottom: 1.5rem;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* duas colunas, um video+texto por coluna */
+    gap: 30px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.video-item {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    gap: 1rem;
+    max-width: 720px;
+}
+
+.video-item iframe {
+    width: 400px;
+    height: 225px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #01ecf355;
+}
+
+.video-text {
+    max-width: 300px;
+    color: #ccc;
+    font-size: 1rem;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 20px #01ecf355;
+}
+
+nav {
+    margin-top: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #01ecf3, #da107b);
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.5rem;
+    border-radius: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #01ecf3aa;
+}
